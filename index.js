@@ -9,7 +9,7 @@ const student = require("./routes/studentRoutes")
 connectDB()
 
 app.use(cors({
-    origin: ["http://localhost:5173","https://as-efrontend.vercel.app/"], // Allow requests from your frontend
+    origin: "*", // Allow requests from your frontend
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
     credentials: true, // Allow cookies or authorization headers
 }));
