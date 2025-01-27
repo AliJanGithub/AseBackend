@@ -11,6 +11,6 @@ app.use(cors({
     credentials: true, // Allow cookies or authorization headers
 }));
 student.post("/add",verifyToken, addStudent);
-student.get("/",verifyToken,getStudent)
+student.get("/get",verifyToken,getStudent)
 
 module.exports = student;
